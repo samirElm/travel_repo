@@ -8988,11 +8988,11 @@ h1, h2, h3 {
     padding-bottom: 5px; }
   /* line 79, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/layout/_navbar.css.scss */
   .navbar-wagon .navbar-nav > li > a.btn {
-    line-height: 40px;
+    line-height: 35px;
     padding: 0 10px;
     color: white;
     border-radius: 2px;
-    margin-top: 10px;
+    margin-top: 12.5px;
     font-weight: bold;
     background-color: #EE5F5B;
     font-size: 12px; }
@@ -9004,23 +9004,26 @@ h1, h2, h3 {
     height: 50px;
     padding-top: 10px;
     padding-left: 40px; }
-  /* line 99, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/layout/_navbar.css.scss */
+  /* line 98, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/layout/_navbar.css.scss */
+  .navbar-wagon .navbar-brand img:hover, .navbar-wagon .navbar-brand svg:hover {
+    opacity: 0.4; }
+  /* line 103, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/layout/_navbar.css.scss */
   .navbar-wagon .img-avatar {
     border: 2px solid white;
     box-shadow: 0 0 2px #c8c8c8;
     height: 46px;
     margin-right: 10px;
     border-radius: 50%; }
-  /* line 107, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/layout/_navbar.css.scss */
+  /* line 111, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/layout/_navbar.css.scss */
   .navbar-wagon .navbar-toggle {
     border-color: #dddddd;
     width: 45px;
     background: transparent; }
-  /* line 113, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/layout/_navbar.css.scss */
+  /* line 117, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/layout/_navbar.css.scss */
   .navbar-wagon .navbar-nav > li > .dropdown-menu {
     border-radius: 0;
     margin-top: 10px; }
-  /* line 118, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/layout/_navbar.css.scss */
+  /* line 122, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/layout/_navbar.css.scss */
   .navbar-wagon .navbar-nav > li > .dropdown-menu:before {
     position: absolute;
     background: white;
@@ -9040,10 +9043,10 @@ h1, h2, h3 {
  * Navbar profile picture
  * ------------------------------------- */
 @media screen and (max-width: 768px) {
-  /* line 141, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/layout/_navbar.css.scss */
+  /* line 145, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/layout/_navbar.css.scss */
   .navbar-wagon .navbar-brand img, .navbar-wagon .navbar-brand svg {
     height: 50px; }
-  /* line 144, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/layout/_navbar.css.scss */
+  /* line 148, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/layout/_navbar.css.scss */
   .navbar-wagon .navbar-brand, .navbar-wagon .navbar-brand:hover {
     display: block;
     color: white;
@@ -9103,98 +9106,137 @@ h1, h2, h3 {
 
 /* line 1, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
 #banner {
-  background-image: url("../images/falaise.jpg");
   padding-top: 198px;
   padding-bottom: 30px;
   padding-left: 85px;
-  padding-right: 85px; }
-  /* line 7, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  padding-right: 85px;
+  position: relative;
+  background-image: url("../images/falaise.jpg");
+  background-size: cover;
+  color: white; }
+  /* line 10, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  #banner h1, #banner p {
+    position: relative;
+    z-index: 2; }
+  /* line 14, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
   #banner p {
     color: white;
     font-weight: 100;
     font-size: 25px;
     line-height: 35px;
     letter-spacing: 0px; }
-  /* line 14, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  /* line 21, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
   #banner h1 {
     font-size: 70px;
     color: white; }
+  /* line 25, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  #banner .filter {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #EE5F5B;
+    opacity: 0.5; }
 
-/* line 19, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+/* line 36, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
 .bg-red {
   background: #D55555;
   padding-top: 80px;
   padding-bottom: 80px; }
-  /* line 23, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  /* line 40, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
   .bg-red h2 {
     color: #F5F5F5; }
-  /* line 26, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  /* line 43, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
   .bg-red h1 {
     padding: 10px; }
-  /* line 29, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  /* line 46, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
   .bg-red p {
     color: #F5F5F5;
     font-weight: lighter;
     padding-bottom: 20px; }
-  /* line 34, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  /* line 51, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
   .bg-red span {
     color: #F5F5F5;
     padding-top: 85px;
     padding-bottom: 40px;
     font-size: 34px; }
 
-/* line 41, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+/* line 58, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
 .card {
   padding: 20px; }
 
-/* line 44, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+/* line 61, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
 .search {
   margin-top: -25%; }
 
-/* line 47, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+/* line 64, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
 .search .form-section {
   background: rgba(0, 0, 0, 0.6);
   border: 2px solid #414141;
   border-radius: 5px;
   padding: 10px; }
 
-/* line 53, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+/* line 70, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
 .card-white {
   background: white;
   margin: 15px;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2); }
-  /* line 57, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  /* line 74, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
   .card-white h2 {
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0px;
     color: #D75452; }
-  /* line 63, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  /* line 80, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
   .card-white p {
     padding: 10px;
     letter-spacing: 0px; }
-  /* line 67, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  /* line 84, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
   .card-white img {
     border-style: none;
     opacity: 0.8;
     width: 100%; }
-  /* line 72, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  /* line 89, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
   .card-white:hover {
     opacity: 1; }
-  /* line 75, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  /* line 92, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
   .card-white a {
     text-decoration: none;
     color: #d2d2d2;
     font-weight: lighter; }
 
-/* line 81, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+/* line 98, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
 .bg-grey {
   background: #F5F6F6;
   padding: 20px; }
 
-/* line 85, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+/* line 102, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
 #team {
   padding: 150px 50px; }
+  /* line 104, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  #team h1 {
+    padding-bottom: 40px; }
+  /* line 107, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  #team h5 {
+    color: #555555; }
+
+/* line 111, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+.bg-white {
+  padding: 150px;
+  font-family: 'Montserrat'; }
+  /* line 114, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  .bg-white h2 {
+    font-size: 34px;
+    line-height: 37px;
+    letter-spacing: 0px;
+    padding: 10px; }
+  /* line 120, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/pages/_home.css.scss */
+  .bg-white p {
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: 0px; }
 
 /*
 ==============================================
