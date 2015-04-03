@@ -2,9 +2,98 @@
 title: Le Wagon Middleman boilerplate
 ---
 
-<div class="welcome text-center padded">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+  <!-- Banner -->
+  <div id="banner">
+    <h1>Travel</h1>
+    <p>
+      Rent unique accommodations from local hosts in 190+ countries.<br>
+      Feel at home anywhere you go in the world with Travel.
+    </p>
+    <%= link_to "Sign up", "#", class: "btn btn-danger btn-size" %>
+  </div>
+  <!-- Features -->
+  <div class="bg-red text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3">
+           <div class="card">
+            <%= image_tag 'travel.svg' %>
+            <h2>Travel</h2>
+            <p>Description of world planet</p>
+
+          </div>
+        </div>
+        <div class="col-xs-1 col-sm-1">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="card">
+            <%= image_tag 'travel.svg' %>
+            <h2>Travel</h2>
+            <p>Description world planet</p>
+          </div>
+        </div>
+        <div class="col-xs-1 col-sm-1">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <div class="card">
+            <%= image_tag 'travel.svg' %>
+            <h2>Travel</h2>
+            <p>Description of wordl travel</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--   Form -->
+  <div class="bg-grey">
+    <div class="text-center padded">
+      <h2>Get news from Travel</h2>
+      <p>Leave us your mail and get Travel news</p>
+      <form class="form-inline">
+          <input type="email" class="form-control" id="email" placeholder="example@mail.com">
+        <button type="submit" class="btn btn-danger">Sign up</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div id="map" style="width: 100%; height: 400px;"></div>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <script type="text/javascript">
+  var myLatlng = new google.maps.LatLng(37.7577,-122.4376);
+
+  var myOptions = {
+    zoom: 16,
+    center: myLatlng,
+    scrollwheel: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    styles: [{"featureType":"water","stylers":[{"color":"#19a0d8"}]},{"featureType":"administrative","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"},{"weight":6}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#e85113"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#efe9e4"},{"lightness":-40}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#efe9e4"},{"lightness":-20}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"lightness":100}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"lightness":-100}]},{"featureType":"road.highway","elementType":"labels.icon"},{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"landscape","stylers":[{"lightness":20},{"color":"#efe9e4"}]},{"featureType":"landscape.man_made","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"lightness":100}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"lightness":-100}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"hue":"#11ff00"}]},{"featureType":"poi","elementType":"labels.text.stroke","stylers":[{"lightness":100}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"hue":"#4cff00"},{"saturation":58}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#f0e4d3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#efe9e4"},{"lightness":-25}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#efe9e4"},{"lightness":-10}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"simplified"}]}] // TODO: replace [] by array from https://snazzymaps.com/
+  };
+
+  var map = new google.maps.Map(document.getElementById('map'), myOptions);
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: "You are here!"
+  });
+  </script>
+
+  <div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title text-center" id="myModalLabel">Subscribe to our newsletter!</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-inline text-center">
+            <input type="email" class="form-control" id="email" placeholder="example@mail.com">
+            <button type="submit" class="btn btn-danger">Sign up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
