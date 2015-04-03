@@ -4,12 +4,14 @@ title: Le Wagon Middleman boilerplate
 
   <!-- Banner -->
   <div id="banner">
+    <div id="filter"></div>
     <h1>Travel</h1>
     <p>
       Rent unique accommodations from local hosts in 190+ countries.<br>
       Feel at home anywhere you go in the world with Travel.
     </p>
     <%= link_to "Sign up", "#", class: "btn btn-danger btn-size" %>
+      <i class="fa fa-angle-down fa-6 scroll-btn pulse"></i>
   </div>
   <!-- Features -->
   <div class="bg-red text-center">
@@ -18,13 +20,12 @@ title: Le Wagon Middleman boilerplate
         <div class="col-xs-12 col-sm-3">
            <div class="card">
             <%= image_tag 'travel.svg' %>
-            <h2>Travel</h2>
+            <h2>Book</h2>
             <p>Description of world planet</p>
-
           </div>
         </div>
         <div class="col-xs-1 col-sm-1">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
         </div>
         <div class="col-xs-12 col-sm-4">
           <div class="card">
@@ -34,13 +35,13 @@ title: Le Wagon Middleman boilerplate
           </div>
         </div>
         <div class="col-xs-1 col-sm-1">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
         </div>
         <div class="col-xs-12 col-sm-3">
           <div class="card">
             <%= image_tag 'travel.svg' %>
-            <h2>Travel</h2>
-            <p>Description of wordl travel</p>
+            <h2>Discover</h2>
+            <p>Description of world planet</p>
           </div>
         </div>
       </div>
@@ -82,6 +83,7 @@ title: Le Wagon Middleman boilerplate
   });
   </script>
 
+  <!-- Modal -->
   <div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">

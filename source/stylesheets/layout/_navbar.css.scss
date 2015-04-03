@@ -1,10 +1,10 @@
 /* -------------------------------------
  * Colors & Fonts
  * ------------------------------------- */
-$navbar-color: black;
-$navbar-hover-color: $yellow;
+$navbar-color: white;
+$navbar-hover-color: $red;
 $navbar-font-family: $header-font;
-$navbar-bg: white;
+$navbar-bg: transparent;
 
 /* -------------------------------------
  * Box model
@@ -18,8 +18,8 @@ $navbar-border-bottom-color: grey;
 /* -------------------------------------
  * Navbar button
  * ------------------------------------- */
-$navbar-btn-height: 40px;
-$navbar-btn-bg: lightgrey;
+$navbar-btn-height: 35px;
+$navbar-btn-bg: $red;
 $navbar-btn-color: white;
 $navbar-btn-horizontal-padding: 10px;
 $navbar-btn-radius: 2px;
@@ -91,8 +91,13 @@ $navbar-profile-border-width: 2px;
 
   .navbar-brand img, .navbar-brand svg {
     height: $navbar-height;
-    padding: 0px;
+    padding-top: 10px;
+    padding-left: 40px;
   }
+  .navbar-brand img:hover, .navbar-brand svg:hover{
+    opacity: 0.4;
+  }
+
 
   .img-avatar{
     border: $navbar-profile-border-width solid $navbar-profile-border-color;

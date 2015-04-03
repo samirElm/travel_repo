@@ -1,5 +1,23 @@
 ---
 title: Le Wagon Middleman boilerplate
 ---
-
-<h1>Our team</h1>
+<div class="bg-red text-center" id="team">
+  <h1>Our team</h1>
+  <div class="container">
+    <div class="row">
+      <% data.products.each do |product| %>
+      <div class="col-xs-12 col-sm-4">
+        <%= image_tag product.picture, class: 'img-circle' %>
+        <h3><%= product.name %></h3>
+        <h5><%= product.job %></h5>
+        <p><%= product.description %></p>
+      </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="bg-white text-center">
+    <h2>Contact us</h2>
+    <p>+33 6 24 68 82 16</p>
+    <p>contact@travel.com</p>
+  </div>
+</div>
