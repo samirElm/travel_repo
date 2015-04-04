@@ -11,14 +11,16 @@ title: Le Wagon Middleman boilerplate
       Feel at home anywhere you go in the world with Travel.
     </p>
     <%= link_to "Sign up", "#", class: "btn btn-danger btn-size" %>
+    <% link_to 'index.html' do %>
       <i class="fa fa-angle-down fa-6 scroll-btn pulse"></i>
+    <% end %>
   </div>
   <!-- Features -->
   <div class="bg-red text-center">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-3">
-           <div class="card">
+           <div class="card-transparent">
             <%= image_tag 'travel.svg' %>
             <h2>Book</h2>
             <p>Description of world planet</p>
@@ -28,7 +30,7 @@ title: Le Wagon Middleman boilerplate
           <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
         </div>
         <div class="col-xs-12 col-sm-4">
-          <div class="card">
+          <div class="card-transparent">
             <%= image_tag 'travel.svg' %>
             <h2>Travel</h2>
             <p>Description world planet</p>
@@ -38,7 +40,7 @@ title: Le Wagon Middleman boilerplate
           <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
         </div>
         <div class="col-xs-12 col-sm-3">
-          <div class="card">
+          <div class="card-transparent">
             <%= image_tag 'travel.svg' %>
             <h2>Discover</h2>
             <p>Description of world planet</p>

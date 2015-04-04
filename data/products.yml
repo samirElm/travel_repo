@@ -1,12 +1,15 @@
 - name: 'Brian Chesky'
   picture: 'brian.jpg'
-  description: 'Brian is the co-founder and CEO at Airbnb. He drives the company vision, strategy and growth as it provides interesting and unique ways for people to travel and changes the lives of its community'
   job: 'CEO & Co-Founder'
+  linkedin: http://www.linkedin.com
+  description: 'Brian is the co-founder and CEO at Airbnb. <br> He drives the company vision, strategy and growth as it provides interesting and unique ways for people to travel and changes the lives of its community'
 - name: 'Nathan Blecharczyk'
   picture: 'nathan.jpg'
-  description: "Nathan is the co-founder and CTO at Airbnb. He oversees the technical strategy of the company, and is dedicated to building a team of world-class engineers to keep Airbnb at the forefront of the industry."
   job: "CTO & C-Founder"
+  linkedin: http://www.linkedin.com
+  description: "Nathan is the co-founder and CTO at Airbnb. He oversees the technical strategy of the company, and is dedicated to building a team of world-class engineers to keep Airbnb at the forefront of the industry."
 - name: 'Joe Gebbia'
   picture: 'joe.jpg'
-  description: "Joe is the co-founder and CPO at Airbnb. He leads the product team in creating meaningful experiences through intuitive design, and oversees Airbnb's brand and product development."
   job: "CPO & Co-Founder"
+  linkedin: http://www.linkedin.com
+  description: "Joe is the co-founder and CPO at Airbnb. He leads the product team in creating meaningful experiences through intuitive design, and oversees Airbnb's brand and product development."

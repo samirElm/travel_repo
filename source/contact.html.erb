@@ -7,10 +7,14 @@ title: Le Wagon Middleman boilerplate
     <div class="row">
       <% data.products.each do |product| %>
       <div class="col-xs-12 col-sm-4">
-        <%= image_tag product.picture, class: 'img-circle' %>
-        <h3><%= product.name %></h3>
-        <h5><%= product.job %></h5>
-        <p><%= product.description %></p>
+        <div class="card">
+          <% link_to product.linkedin, target: "_blank" do %>
+            <%= image_tag product.picture, class: 'img-circle' %>
+          <% end %>
+          <h3><%= product.name %></h3>
+          <h5><%= product.job %></h5>
+          <p><%= product.description %></p>
+        </div>
       </div>
       <% end %>
     </div>
