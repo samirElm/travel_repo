@@ -12104,6 +12104,40 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 
 
 
+$(document).ready(function() {
+  $(window).scroll(function(e){
+    if ($(this).scrollTop() > 100) {
+      $(".navbar").css({
+        "background": "rgba(200, 200, 200, 0.7)",
+      });
+    }
+    else {
+      $(".navbar").css({
+        "background": "transparent",
+      });
+    }
+  });
+});
+$(document).ready(function() {
+
+  $(".window-height").css("height", $(window).height());
+
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+
+});
 
 
 
