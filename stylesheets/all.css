@@ -8909,7 +8909,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #141414; }
   /* line 12, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/layout/_base.css.scss */
-  body.destinations .navbar-wagon {
+  body.destinations .navbar-wagon, body.contact .navbar-wagon {
     background: rgba(200, 200, 200, 0.7); }
 
 /* line 17, /Users/Samir/code/samirElm/travel_repo/source/stylesheets/layout/_base.css.scss */
